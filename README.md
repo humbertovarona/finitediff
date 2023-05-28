@@ -35,21 +35,23 @@ import matplotlib.pyplot as plt
 ```
 # Functions list
 
-1. `compute_derivative_x` Compute the derivative in the X-direction using finite differences
+1. **compute_derivative_x** Compute the derivative in the X-direction using finite differences
+
+
+
+2. **compute_derivative_y** Compute the derivative in the Y-direction using finite differences
 
 > Arguments:
 
->> data: 2D array of shape (n, m) containing the data.
+>> `data`: 2D array of shape (n, m) containing the data.
 
->> delta_y: The known spacing between data points in the y-direction.
+>> `delta_y`: The known spacing between data points in the y-direction.
 
->> derivative_type: String specifying the type of derivative calculation. Can be 'left', 'right', or 'center'.
+>> `derivative_type`: String specifying the type of derivative calculation. Can be 'left', 'right', or 'center'.
 
 > Returns: derivative: 2D array of shape (n, m) containing the numerical derivative in the y-direction
 
-2. `compute_derivative_y` Compute the derivative in the Y-direction using finite differences
-
-3. `quick_plotContourMap` Plots a contour map with the result of the derivative by finite difference
+3. **quick_plotContourMap** Plots a contour map with the result of the derivative by finite difference
 
 # Usage examples
 
