@@ -23,8 +23,8 @@ Computes the derivatives in X and Y from a regular grid using finite differences
 # Requirements
 
 ```shell
-# pip install numpy
-# pip install matplotlib
+pip install numpy
+pip install matplotlib
 ```
 
 ## Installation
@@ -35,25 +35,29 @@ import matplotlib.pyplot as plt
 ```
 # Functions list
 
-- `compute_derivative_x`: Compute the derivative in the X-direction using finite differences
-- `compute_derivative_y`: Compute the derivative in the Y-direction using finite differences
-- `quick_plotContourMap`: Plots a contour map with the result of the derivative by finite difference
+- `compute_derivative_x` Compute the derivative in the X-direction using finite differences
+- `compute_derivative_y` Compute the derivative in the Y-direction using finite differences
+- `quick_plotContourMap` Plots a contour map with the result of the derivative by finite difference
 
 # Usage examples
 
 ## Function increase_image_border
 
 ```python
-input_image_path = "./test/fig1.jpeg"
-output_image_path = "./test/new_fig2.jpeg"
+n = 150
+m = 100
 
-border_color = (0, 0, 255)
-border_width = 150
-increase_image_border(input_image_path, output_image_path, border_color, border_width)
+data = np.random.random((n, m))
+
+delta_x = 0.35 
+delta_y = 0.25
+
+x_derivative = compute_derivative_x(data, delta_x, 'center')
+quick_plotContourMap(x_derivative)
 ```
 
 <p align="center">
-<img src="/figures/new_fig2.jpeg" width="500">
+<img src="/images/sample1.png" width="500">
 </p>
 
 
