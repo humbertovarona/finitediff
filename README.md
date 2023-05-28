@@ -37,11 +37,13 @@ import matplotlib.pyplot as plt
 
 1. `compute_derivative_x` Compute the derivative in the X-direction using finite differences
 
-Arguments:
+> Arguments:
 
-> data: 2D array of shape (n, m) containing the data.
-> delta_y: The known spacing between data points in the y-direction.
-> derivative_type: String specifying the type of derivative calculation. Can be 'left', 'right', or 'center'.
+>> data: 2D array of shape (n, m) containing the data.
+
+>> delta_y: The known spacing between data points in the y-direction.
+
+>> derivative_type: String specifying the type of derivative calculation. Can be 'left', 'right', or 'center'.
 
 > Returns: derivative: 2D array of shape (n, m) containing the numerical derivative in the y-direction
 
