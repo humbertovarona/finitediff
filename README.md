@@ -2,7 +2,7 @@
 Computes the derivatives in X and Y from a regular grid using finite differences
 # Version
 
-1.0
+![](https://img.shields.io/badge/Version%3A-1.0-success)
 
 # Release date
 
@@ -10,7 +10,7 @@ December, 2, 2022
 
 # License
 
-MIT
+![](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)
 
 # Functions list
 
