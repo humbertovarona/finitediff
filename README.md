@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt
 
 # Usage examples
 
-## Function increase_image_border
+## Sample 1
 
 ```python
 n = 150
@@ -60,4 +60,23 @@ quick_plotContourMap(x_derivative)
 <img src="/images/sample1.png" width="500">
 </p>
 
+
+## Sample 2
+
+```python
+n = 20
+m = 18
+
+data = np.random.random((n, m))
+
+delta_x = 0.15
+delta_y = 0.12
+
+y_derivative = compute_derivative_y(data, delta_y, 'right')
+quick_plotContourMap(y_derivative)
+```
+
+<p align="center">
+<img src="/images/sample2.png" width="500">
+</p>
 
