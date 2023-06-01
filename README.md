@@ -35,6 +35,7 @@ pip install matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 ```
+
 # Functions list
 
 1. **compute_derivative_x** Compute the derivative in the X-direction using finite differences
